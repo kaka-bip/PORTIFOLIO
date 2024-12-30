@@ -1,0 +1,180 @@
+/* Comentário sobre as larguras (se necessário, ative as propriedades abaixo)
+max-width: 1440px;
+min-width: 370px;
+*/
+
+:root {
+    --cor01: #b4becd;
+    --cor02: #fff;
+    --cor03: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    color: white;
+}
+
+body {
+    background-color: slategray;
+}
+
+.container {
+    max-width: 1680px;
+    min-width: 370px;
+    margin: auto;
+}
+
+p {
+    padding: 10px;
+    margin: 5px;
+    font-weight: lighter;
+    color: white;
+}
+
+img {
+    width: 50px;
+    margin: 5px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav {
+    background-color: lightgray;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.top {
+    background-color: black;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: var(--cor02);
+    text-align: center;
+}
+
+.meio {
+    background-image: linear-gradient(to right, #8b20c0, #db00eb, #9e00eb );
+    margin: 3px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+
+}
+
+#sm > h2 {
+    margin: 5px;
+    text-align: center;
+
+}
+
+#sm > img{
+    align-items: center;
+}
+
+.fim {
+    background-color: var(--cor01);
+    margin: 5px;
+    padding: 2px;
+    border-radius: 5px;
+    text-align: center;
+    color: var(--cor02);
+    text-shadow: 2px 1px 1px black;
+}
+
+.fim > p {
+    margin: 0;
+}
+
+.ctt > h2 {
+    text-align: center;
+}
+
+.input{
+    border-radius: 50px;
+}
+.btt:active{
+    transform: scale(0.95);
+    box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
+}
+
+
+.btt{
+    border: 2px solid purple;
+    border-radius: 6px;
+    padding: 2px;
+    margin: 2px;
+    width: 55px;
+    background-color: white;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+    transition: 0.1s ease , 0.1s ease;
+}
+
+.btt:hover{
+    background-color: red;
+    color: white;
+}
+
+.ctt{
+border: 2px solid black;
+width: 250px;
+border-radius: 10px;
+margin: 4px;
+padding: 4px;
+background-color: cornflowerblue;
+}
+
+/*habilidades*/
+
+.icons-container {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    gap: 20px;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 30px;
+    width: 350px;
+    height: 200p
+}
+.icon {
+    font-size: 50px;
+    text-align: center;
+}
+
+.html-icon {
+    color: #e34c26;
+    border: 2px solid #8b20c0;/* Cor do HTML */
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.css-icon {
+    color: #264de4; 
+    border: 2px solid #8b20c0;/* Cor do CSS */
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+}
+
+.js-icon {
+    color: #f7df1e;
+    border: 2px solid #8b20c0;/* Cor do JavaScript */
+    border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
+}
