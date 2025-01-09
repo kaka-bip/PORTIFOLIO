@@ -33,16 +33,63 @@ p {
     color: white;
 }
 
-img {
+.img{
+    background-image: url('img/sniper.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    animation: moveBackground 0.5s ease-in-out infinite;
     width: 50px;
     margin: 5px;
 }
+
+@keyframes moveBackground{
+    0%{
+        background-position: right top;
+    }
+    50%{
+        background-position: right bottom;
+    }
+    100%{
+        background-position: right top;
+    }
+}
+
+.img{
+    position: fixed;
+    top: 75%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translate(-0%, -0%) translateY(0);
+    }
+    50% {
+      transform: translate(-0%, -0%) translateY(-20px);
+    }
+    100% {
+      transform: translate(-0%, -0%) translateY(0);
+    }
+  }
+  
+  .floating-character img {
+    width: 300px;
+    height: auto;
+  }
 
 nav > a {
     text-decoration: none;
     color: green;
     font-weight: bold;
     padding: 5px;
+}
+
+nav > a:hover{
+    color: chartreuse;
+
 }
 
 nav {
@@ -94,7 +141,8 @@ nav {
 }
 
 .fim > p {
-    margin: 0;
+    margin: 1px;
+    padding: 1px;
 }
 
 .ctt > h2 {
@@ -102,7 +150,9 @@ nav {
 }
 
 .input{
-    border-radius: 50px;
+    border-radius: 5px;
+    color: black;
+    border: 1px solid black;
 }
 .btt:active{
     transform: scale(0.95);
@@ -116,7 +166,7 @@ nav {
     padding: 2px;
     margin: 2px;
     width: 55px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     box-shadow: 2px 2px 2px black;
     cursor: pointer;
     transition: 0.1s ease , 0.1s ease;
@@ -145,36 +195,85 @@ background-color: cornflowerblue;
     gap: 20px;
     padding: 10px;
     margin: 10px;
-    border: 2px solid black;
-    border-radius: 30px;
     width: 350px;
     height: 200p
 }
+
 .icon {
     font-size: 50px;
     text-align: center;
 }
-
+/*ICONS*/
 .html-icon {
-    color: #e34c26;
-    border: 2px solid #8b20c0;/* Cor do HTML */
-    border-radius: 5px;
+    color: #00e9b7;
     margin: 5px;
     padding: 3px;
+    transition: transform 0.3s ease;
 }
 
 .css-icon {
-    color: #264de4; 
-    border: 2px solid #8b20c0;/* Cor do CSS */
-    border-radius: 5px;
+    color: #00e9b7; 
     margin: 5px;
     padding: 3px;
+    transition: transform 0.3s ease;
 }
 
 .js-icon {
-    color: #f7df1e;
-    border: 2px solid #8b20c0;/* Cor do JavaScript */
-    border-radius: 5px;
+    color: #00e9b7;
     margin: 5px;
     padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+/*HOVE DE INCONS*/
+
+.html-icon:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+.css-icon:hover {
+    color: #00e9b7; 
+    margin: 5px;
+    padding: 3px;
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.js-icon:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+/*email*/
+#email{
+    color: black;
+}
+
+#nome{
+color:black;
+}
+
+#Mensagem{
+    color: black;
+}
+
+aside{
+    background-color: #4d0253;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    width: 400px;
+}
+
+.pp{
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid white;
+    text-align: justify;
+}
+
+.HLL{
+    text-align: center;
 }
