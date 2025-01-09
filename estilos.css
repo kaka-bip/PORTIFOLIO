@@ -1,4 +1,4 @@
-/* Comentário sobre as larguras (se necessário, ative as propriedades abaixo)
+/* larguras
 max-width: 1440px;
 min-width: 370px;
 */
@@ -61,24 +61,24 @@ p {
     right: 0%;
     transform: translate(-50%, -50%);
     animation: float 3s ease-in-out infinite;
-  }
-  
-  @keyframes float {
-    0% {
-      transform: translate(-0%, -0%) translateY(0);
-    }
+}
+
+@keyframes float {
+0% {
+transform: translate(-0%, -0%) translateY(0);
+}
     50% {
-      transform: translate(-0%, -0%) translateY(-20px);
-    }
+transform: translate(-0%, -0%) translateY(-20px);
+}
     100% {
-      transform: translate(-0%, -0%) translateY(0);
+transform: translate(-0%, -0%) translateY(0);
     }
-  }
-  
-  .floating-character img {
+}
+
+.floating-character img {
     width: 300px;
     height: auto;
-  }
+}
 
 nav > a {
     text-decoration: none;
@@ -149,11 +149,11 @@ nav {
     text-align: center;
 }
 
-.input{
+/*.input{
     border-radius: 5px;
     color: black;
     border: 1px solid black;
-}
+}*/
 .btt:active{
     transform: scale(0.95);
     box-shadow: 0 2px 5px rgb(0, 0, 0, 0.2);
