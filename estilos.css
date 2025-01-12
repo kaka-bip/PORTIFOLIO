@@ -196,7 +196,7 @@ background-color: cornflowerblue;
     padding: 10px;
     margin: 10px;
     width: 350px;
-    height: 200p
+    height: 30p;
 }
 
 .icon {
@@ -225,19 +225,42 @@ background-color: cornflowerblue;
     transition: transform 0.3s ease;
 }
 
-/*HOVE DE INCONS*/
+.github-icon{
+    color: #00e9b7;
+    margin: 5px;
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
 
+.git-icon{
+    color: #00e9b7;
+    margin: 5px;
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+.vscode-icon{
+    color: #00e9b7;
+    margin: 5px;
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+.figma-icon{
+    color: #00e9b7;
+    margin: 5px;
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+/*HOVE DE INCONS*/
 .html-icon:hover {
     transform: scale(1.4);
     transition: transform 0.3s ease;
 }
 
 .css-icon:hover {
-    color: #00e9b7; 
-    margin: 5px;
-    padding: 3px;
     transform: scale(1.4);
-    transition: transform 0.3s ease;
     transition: transform 0.3s ease;
 }
 
@@ -245,6 +268,29 @@ background-color: cornflowerblue;
     transform: scale(1.4);
     transition: transform 0.3s ease;
 }
+
+.github-icon:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+.git-icon:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+.vscode-icon:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+.figma-icon:hover {
+    transform: scale(1.4);
+    transition: transform 0.3s ease;
+}
+
+/*display*/
+
 /*email*/
 #email{
     color: black;
