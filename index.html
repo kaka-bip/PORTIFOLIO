@@ -3,72 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"> <!-- Link do Font Awesome -->
-    <title>Portfólio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portifolio-kauan</title>
 </head>
 <body>
-    <header class="top">
-        <h1>KAUAN.K</h1>
+    <!--load-->
+    <div class="loading-screen">
+        <div class="spinner"></div>
+      </div>
+    
+   <!-- Header --> 
+    <header>
+        <h1>Kauan.K</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre mim</a>
+            <a href="#">Projetos</a>
+            <a href="#">Habilidades</a>
+            <a href="#">Contatos</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#sobre-mim">Sobre mim</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#contato">Contato</a>
-    </nav>
-    <main class="meio">
-        <section id="sm">
-            <h2>Sobre mim</h2>
-            <img src="img/sniper.png" alt="Imagem anime" class="img">
-            <p class="pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident illo porro aperiam enim ullam, nemo saepe maiores. Laudantium modi at rerum atque? Ipsam aut provident autem nihil hic rerum exercitationem.
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non iure id nobis fuga veniam qui natus minima suscipit possimus, maxime temporibus exercitationem reiciendis eaque, unde, quo ipsam distinctio consequatur nulla!</p>
-        </section>
-        <!--habilidades-->
-        <aside>
-            <h2 class="HLL">Habilidades</h2>
-            <div class="icons-container">
-                <ul>
-                    <!-- Ícone do HTML -->
-                    <i class="fa-brands fa-html5 icon html-icon" title="HTML"></i>
-                    <br>
-                    <!-- Ícone do CSS -->
-                    <i class="fa-brands fa-css3-alt icon css-icon" title="CSS"></i>
-                    <br>
-                    <!-- Ícone do JavaScript -->
-                    <i class="fa-brands fa-js-square icon js-icon" title="JavaScript"></i>
-                <div class="HLL2">
-                        <!-- Ícone do GitHub -->
-                        <i class="fa-brands fa-github icon github-icon" title="GitHub"></i>
-                        <br>
-                        <!-- Ícone do Git -->
-                        <i class="fa-brands fa-git icon git-icon" title="Git"></i>
-                        <br>
-                        <!-- Ícone do VSCode -->
-                        <i class="fa-brands fa-vscode icon vscode-icon" title="VSCode"></i>
-                        <br>
-                        <!-- Ícone do Figma -->
-                        <i class="fa-brands fa-figma icon figma-icon" title="Figma"></i>
-                </div>
-                </ul>
-            </div>
-        </aside>
-        <section class="ctt">
-            <h2>Contato</h2>
-
-            <div class="input">
-            <form>
-                <input type="email" name="" id="email" class="a1" placeholder="Seu Email" required data-error="Digite seu Nome"><br>
-                <input type="text" name="" id="nome" class="b2" placeholder="Seu Nome">
-                <input type="text" name="" id="Mensagem" class="c3" placeholder="Sua Mensagem"><br>
-            </form>
-            <div class="btt">Enviar</div>
-            </div>
-        </section>
+    <!-- Main -->
+    <main>
+        <!--Home-->
+        <div class="cssanimation leDoorCloseLeft sequence">KAUAN.K</div>
+        <!--Sobre mim-->
+        <div class="mim">
+            <h2> SOBRE MIM </h2>
+            <P>Hello,word, sou Kauan, desenvolvedor front-end júnior com 14 anos. Comecei minha jornada no desenvolvimento web no final de 2024 e estou cada vez mais animado com as possibilidades que a tecnologia oferece. Estou focado em aprimorar minhas habilidades em HTML, CSS e JavaScript, buscando criar experiências mais dinâmicas e funcionais para os usuários. Em 2025, estou determinado a continuar crescendo e me aperfeiçoando para me tornar um desenvolvedor front-end de excelência!</P>
+        </div>
+         <!--Habilidades-->
+         <div class="HB">
+            <h2>Habilidades</h2>
+            <!-- Ícone do HTML -->
+            <i class="fa-brands fa-html5 icon html-icon" title="HTML"></i>
+            
+            <!-- Ícone do CSS -->
+            <i class="fa-brands fa-css3-alt icon css-icon" title="CSS"></i>
+            
+            <!-- Ícone do JavaScript -->
+            <i class="fa-brands fa-js-square icon js-icon" title="JavaScript"></i>
+          
+            <!-- Ícone do GitHub -->
+            <i class="fa-brands fa-github icon github-icon" title="GitHub"></i>
+          
+            <!-- Ícone do Git -->
+            <i class="fa-brands fa-git icon git-icon" title="Git"></i>
+          
+            <!-- Ícone do Figma -->
+            <i class="fa-brands fa-figma icon figma-icon" title="Figma"></i>
+          </div>
+                    <!--Contatos-->
+                    <div class="ctt">
+                        <section class="contact-section">
+                          <div class="contact-container">
+                            <h2>Entre em Contato</h2>
+                            <form action="#" method="POST" class="contact-form">
+                              <label for="name">Nome:</label>
+                              <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                              
+                              <label for="email">E-mail:</label>
+                              <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                              
+                              <label for="message">Mensagem:</label>
+                              <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                              
+                              <button type="submit">Enviar</button>
+                            </form>
+                          </div>
+                        </section>
+                      </div>
     </main>
-    <footer class="fim">
-        <p>&copy; 2024 - Desenvolvido por Kauan</p>
-    </footer>
-    <script src="js/js.js"></script>
+
+    <!-- Footer -->
+     <footer class="footer">&copy Direitos Kauan.K, 2025</footer>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
+     <script src="load.js"></script>
 </body>
 </html>

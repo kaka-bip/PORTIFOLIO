@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive, Arial, Helvetica, sans-serif;
+}
+/*tela de load*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+  
+  .spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid #000;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
+  body.loaded .loading-screen {
+    display: none;
+  }
+/*------------*/
+body{
+    background-color: #783986;
+    max-width: 1680px;
+}
+
+header{
+color: white;
+background-color: black;    
+}
+
+header h1{
+    text-align: center;
+}
+
+nav{
+    background-color: lightgray;
+    text-align: center;
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+nav > a {
+    text-decoration: none;
+    color: green;
+    font-weight: bold;
+    padding: 5px;
+}
+
+nav > a:hover {
+    color: #d47b06;
+}
+/*nome*/
+
+.leDoorCloseLeft{
+font-size: 50px;
+text-align: center;
+text-shadow: 2px 2px 2px black;
+}
+
+.leDoorCloseLeft span { animation-name: leDoorCloseLeft }
+@keyframes leDoorCloseLeft {
+    from, to {
+        transform: perspective(400px);
+        transform-origin: left
+    }
+    from {
+        transform: rotateY(90deg);
+        opacity: 0;
+    }
+    to { opacity: 1 }
+}
+/*sobre mim*/
+
+.mim{
+background-color: rgb(172, 84, 172);
+padding: 5px;
+margin: 2px;
+border:2px solid black;
+border-radius: 10px;
+}
+
+.mim h2{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+.mim p{
+    font-size: 19px;
+    text-align: center;
+    color: white;
+}
+
+/* HABILIDADES */
+.HB {
+    background-color: #f7f7f7;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;  /* Centraliza horizontalmente */
+    align-items: center;  /* Centraliza verticalmente */
+    flex-wrap: wrap;  /* Permite que os ícones quebrem para a linha seguinte se necessário */
+    gap: 20px;  /* Espaçamento entre os ícones */
+  }
+  
+  .HB h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo base dos ícones */
+  .icon {
+    font-size: 60px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1ec4f2;  /* Cor de fundo azul claro */
+    color: black;  /* Cor do ícone */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon:hover {
+    transform: translateY(-5px) scale(1.2);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Efeitos de hover */
+  .html-icon:hover {
+    background-color: #1ec4f2;  /* Mantém a cor de fundo no hover */
+    color: black;  /* Mantém a cor do ícone no hover */
+  }
+  
+  .css-icon:hover {
+    background-color: #1ec4f2;  /* Mantém a cor de fundo no hover */
+    color: black;  /* Mantém a cor do ícone no hover */
+  }
+  
+  .js-icon:hover {
+    background-color: #1ec4f2;  /* Mantém a cor de fundo no hover */
+    color: black;  /* Mantém a cor do ícone no hover */
+  }
+  
+  .github-icon:hover {
+    background-color: #1ec4f2;  /* Mantém a cor de fundo no hover */
+    color: black;  /* Mantém a cor do ícone no hover */
+  }
+  
+  .git-icon:hover {
+    background-color: #1ec4f2;  /* Mantém a cor de fundo no hover */
+    color: black;  /* Mantém a cor do ícone no hover */
+  }
+  
+  .figma-icon:hover {
+    background-color: #1ec4f2;  /* Mantém a cor de fundo no hover */
+    color: black;  /* Mantém a cor do ícone no hover */
+  }
+
+/*CTT*/
+
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #0077b6;
+    border: 2px solid black;
+    border-radius: 10px;
+    
+  }
+  
+  .contact-container {
+    background: #fff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .contact-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #0077b6;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form button {
+    background-color: #0077b6;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .contact-form button:hover {
+    background-color: #005f8a;
+  }
+  /*footer*/
+  .footer{
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 10px;
+    background-attachment: fixed;
+  }
