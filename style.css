@@ -111,22 +111,22 @@ border-radius: 10px;
 
 .mim h2{
     text-align: center;
-    color: white;
+    color: #000000;
     font-size: 40px;
 }
 
 .mim p{
     font-size: 19px;
     text-align: center;
-    color: white;
+    color: #000000;
 }
 
 /* HABILIDADES */
 .HB {
-    background-color: #f7f7f7;
+    background-color: #000000;
     margin: 20px;
     padding: 20px;
-    border: 2px solid #ddd;
+    border: 2px solid #ffffff;
     border-radius: 20px;
     display: flex;
     justify-content: center;  /* Centraliza horizontalmente */
@@ -137,7 +137,7 @@ border-radius: 10px;
   
   .HB h2 {
     text-align: center;
-    color: #333;
+    color: #a1a1a1;
     font-size: 28px;
     width: 100%;
     margin-bottom: 20px;
