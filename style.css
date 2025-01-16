@@ -109,7 +109,7 @@ text-shadow: 0.125rem 0.125rem 0.125rem black;
 
 /*img class=dev*/
 .dev{
-    width: 12.5rem;
+    width: 200px;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -117,7 +117,7 @@ text-shadow: 0.125rem 0.125rem 0.125rem black;
     transition: transform 0.3s ease;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1680px) {
     .dev {
         width: 8rem;
     }
