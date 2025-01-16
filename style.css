@@ -123,6 +123,12 @@ text-shadow: 0.125rem 0.125rem 0.125rem black;
     }
 }
 
+@media (max-width: 370px) {
+    .dev {
+        width: 6rem;
+    }
+}
+
 /*class=dev hover*/
 .dev:hover{
   transform: scale(1.2);
