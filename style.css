@@ -117,6 +117,12 @@ text-shadow: 0.125rem 0.125rem 0.125rem black;
     transition: transform 0.3s ease;
 }
 
+@media (max-width: 600px) {
+    .dev {
+        width: 8rem;
+    }
+}
+
 /*class=dev hover*/
 .dev:hover{
   transform: scale(1.2);
