@@ -1,0 +1,153 @@
+/* Estilos gerais */
+* {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #939FF5;
+    color: #fafafa;
+}
+
+header {
+    text-align: center;
+    background: #5F38F5;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+header a {
+    text-decoration: none;
+    color: #fafafa;
+    margin: 2px;
+    padding: 2px;
+}
+
+/* Responsividade para dispositivos móveis (máx. 600px) */
+@media (max-width: 600px) {
+    header {
+        padding: 10px;
+        text-align: center;
+    }
+
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    .dev {
+        width: 80px;
+    }
+
+    .Sobre, .Habilidades, .Contato {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .contact-container {
+        width: 100%;
+        padding: 10px;
+        max-width: none;
+    }
+
+    .icon {
+        font-size: 2.5rem;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .contact-form button {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/* Responsividade para telas médias (600px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .dev {
+        width: 120px;
+    }
+
+    .Sobre, .Habilidades, .Contato {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    h1, h2 {
+        font-size: 2rem;
+    }
+
+    .icon {
+        font-size: 3rem;
+    }
+
+    .contact-container {
+        width: 90%;
+    }
+}
+
+/* Responsividade para telas grandes (1024px a 1440px) */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    header {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .dev {
+        width: 150px;
+    }
+
+    .Sobre, .Habilidades, .Contato {
+        padding: 20px;
+        font-size: 18px;
+    }
+
+    h1, h2 {
+        font-size: 2.5rem;
+    }
+
+    .icon {
+        font-size: 3.5rem;
+    }
+
+    .contact-container {
+        width: 80%;
+        max-width: 600px;
+    }
+}
+
+/* Responsividade para telas extra grandes (1440px ou maior) */
+@media (min-width: 1441px) {
+    header {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .dev {
+        width: 200px;
+    }
+
+    .Sobre, .Habilidades, .Contato {
+        padding: 30px;
+        font-size: 20px;
+    }
+
+    h1, h2 {
+        font-size: 3rem;
+    }
+
+    .icon {
+        font-size: 4rem;
+    }
+
+    .contact-container {
+        width: 70%;
+        max-width: 700px;
+    }
+}
