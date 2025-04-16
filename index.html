@@ -2,52 +2,61 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/projetos.css">
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+   <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="https://cssanimation.io/css/cssanimation.css">
+   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
-    <title>Portifolio-kauan</title>
+    <title>h1-PORTIFOLIO-h1</title>
 </head>
 <body>
-    <!--load-->
-    <div class="loading-screen">
-        <div class="spinner"></div>
-      </div>
-    
-   <!-- Header --> 
     <header>
-        <h1>Kauan.K</h1>
+        <div class="cssanimation leFadeInTop sequence"> Portifolio_Kauan </div>
         <nav>
-            <a href="#">Home</a>
-            <a href="#">Sobre mim</a>
-            <a href="#">Projetos</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Contatos</a>
+            <ul>
+                <a href="#Sobre">Sobre Mim
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+
+                <a href="#Habilidades">Habilidades
+                    <i class="fas fa-code"></i>
+                </a>
+
+                <a href="#Projetos">Projetos
+                    <i class="fa-solid fa-diagram-project"></i>
+                </a>
+
+                <a href="#Contato">Contatos
+                    <i class="fa-regular fa-comment"></i>
+                </a>
+
+            </ul>
         </nav>
+        <div class="cssanimation leFadeInTop sequence"> Kauan.K </div>
     </header>
-    <!-- Main -->
+
     <main>
         <!--Home-->
         <div class="cssanimation leDoorCloseLeft sequence">KAUAN.K</div>
         <img src="https://user-images.githubusercontent.com/97471199/230774187-e482399b-492c-4c17-a831-0314bf90526e.png" alt=""  class="dev">
+
         <!--Sobre mim-->
-        <div class="mim">
-            <h2> SOBRE MIM </h2>
-            <P>Hello,word, sou Kauan, desenvolvedor front-end júnior com 14 anos. Comecei minha jornada no desenvolvimento web no final de 2024 e estou cada vez mais animado com as possibilidades que a tecnologia oferece. Estou focado em aprimorar minhas habilidades em HTML, CSS e JavaScript, buscando criar experiências mais dinâmicas e funcionais para os usuários. Em 2025, estou determinado a continuar crescendo e me aperfeiçoando para me tornar um desenvolvedor front-end de excelência!</P>
+        <div class="Sobre" id="Sobre">
+            <h2><strong>Sobre mim</strong></h2>
+            <P>Hello,word,<br>Olá, sou Kauan, um desenvolvedor front-end júnior de 14 anos. Comecei minha jornada no desenvolvimento web no final de 2024 e, desde então, venho explorando as diversas possibilidades que a tecnologia oferece. Atualmente, estou focado em aprimorar minhas habilidades em HTML, CSS e JavaScript, com o objetivo de criar experiências mais dinâmicas e funcionais para os usuários. Em 2025, estou determinado a continuar meu aprendizado e me aperfeiçoar para me tornar um desenvolvedor front-end de excelência!</P>
         </div>
+
          <!--Habilidades-->
-         <div class="HB">
+         <div class="Habilidades" id="Habilidades">
             <h2>Habilidades</h2>
             <!-- Ícone do HTML -->
             <i class="fa-brands fa-html5 icon html-icon" title="HTML"></i>
             
             <!-- Ícone do CSS -->
             <i class="fa-brands fa-css3-alt icon css-icon" title="CSS"></i>
-            
-            <!-- Ícone do JavaScript -->
-            <i class="fa-brands fa-js-square icon js-icon" title="JavaScript"></i>
-          
+                    
             <!-- Ícone do GitHub -->
             <i class="fa-brands fa-github icon github-icon" title="GitHub"></i>
           
@@ -56,32 +65,61 @@
           
             <!-- Ícone do Figma -->
             <i class="fa-brands fa-figma icon figma-icon" title="Figma"></i>
-          </div>
-                    <!--Contatos-->
-                    <div class="ctt">
-                        <section class="contact-section">
-                          <div class="contact-container">
-                            <h2>Entre em Contato</h2>
-                            <form action="#" method="POST" class="contact-form">
-                              <label for="name">Nome:</label>
-                              <input type="text" id="name" name="name" placeholder="Seu nome" required>
-                              
-                              <label for="email">E-mail:</label>
-                              <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-                              
-                              <label for="message">Mensagem:</label>
-                              <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
-                              
-                              <button type="submit">Enviar</button>
-                            </form>
-                          </div>
-                        </section>
-                      </div>
-    </main>
 
-    <!-- Footer -->
-     <footer class="footer">&copy Direitos Kauan.K - 2025</footer>
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/letteranimation.min.js"></script>
-     <script src="load.js"></script>
+            <h2>Estudando</h2>
+            <!-- Ícone do Figma -->
+            <i class="fa-brands fa-js icon JavaScript" title="JavaScript"></i>
+            
+            <!-- Ícone do Figma -->
+            <i class="fa-brands fa-python icon python-icon" title="python"></i>
+          </div>
+
+            <!--Projetos com API-->
+<div id="Projetos">
+    
+                <h1>Projetos</h1>
+                <div id="projetos-container"></div>
+                <button id="load-more">Carregar Mais</button>
+    
+</div>
+        <!--Contatos-->
+<div class="Contato" id="Contato">
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2>Entre em Contato</h2>
+        <form action="https://formsubmit.co/contatemporaria6565@gmail.com" method="POST" class="contact-form" target="_blank">
+          <!-- Campos ocultos para configurar o FormSubmit -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> <!-- opcional -->
+  
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+  
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+  
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+  
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  </main>
+
+
+    <footer>
+        <div class="redes socias">
+            <!--ícones-->
+            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-github"></i>
+            <!---->
+            Todos Direitos Reservados by Kauan.K&copy;2025_Kauan
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/API.js"></script>
 </body>
 </html>
