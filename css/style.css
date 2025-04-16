@@ -141,7 +141,8 @@ header a{
     border: 2px solid #ffff;
     border-radius: 5px;
     background: black;
-    height: 300px;
+    width: 100%;
+    height: 350px;
     padding: 5px;
     margin: 2px;
     text-align: justify;
