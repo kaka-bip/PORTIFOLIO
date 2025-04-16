@@ -151,3 +151,27 @@ header a {
         max-width: 700px;
     }
 }
+
+/* Ajuste para dispositivos móveis */
+@media (max-width: 600px) {
+    .Sobre {
+        padding: 10px;
+        font-size: 14px; /* Reduzir o tamanho da fonte para telas pequenas */
+    }
+
+    .Sobre h2 {
+        font-size: 20px;
+    }
+}
+
+/* Ajuste para telas médias (600px a 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .Sobre {
+        padding: 15px;
+        font-size: 16px; /* Tamanho confortável para tablets */
+    }
+
+    .Sobre h2 {
+        font-size: 22px;
+    }
+}
