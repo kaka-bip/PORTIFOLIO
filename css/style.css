@@ -136,6 +136,7 @@ header a{
     
 
 .Sobre{
+    max-width: 1680px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     border: 2px solid #ffff;
     border-radius: 5px;
