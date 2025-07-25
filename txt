@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/responsividade.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/projetos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h1-PORTIFOLIO-h1</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="cssanimation leFadeInTop sequence"> <h2>Portifolio_Kauan </h2></div>
+            <ul>
+                <a href="#Sobre">Sobre Mim
+                    <i class="fa-solid fa-circle-user"></i>
+                </a>
+
+                <a href="#Habilidades">Habilidades
+                    <i class="fas fa-code"></i>
+                </a>
+
+                <a href="#Projetos">Projetos
+                    <i class="fa-solid fa-diagram-project"></i>
+                </a>
+
+                <a href="#Contato">Contatos
+                    <i class="fa-regular fa-comment"></i>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!--Home-->
+        <div class="cssanimation leDoorCloseLeft sequence">KAUAN.K</div>
+        <img src="https://user-images.githubusercontent.com/97471199/230774187-e482399b-492c-4c17-a831-0314bf90526e.png" alt=""  class="dev">
+
+        <!--Sobre mim-->
+        <div class="Sobre" id="Sobre">
+            <h2><strong>Sobre mim</strong></h2>
+            <P>Hello,word,<br>Olá, sou Kauan, um desenvolvedor front-end júnior de 14 anos. Comecei minha jornada no desenvolvimento web no final de 2024 e, desde então, venho explorando as diversas possibilidades que a tecnologia oferece. Atualmente, estou focado em aprimorar minhas habilidades em HTML, CSS e JavaScript, com o objetivo de criar experiências mais dinâmicas e funcionais para os usuários. Em 2025, estou determinado a continuar meu aprendizado e me aperfeiçoar para me tornar um desenvolvedor front-end de excelência!</P>
+        </div>
+
+         <!--Habilidades-->
+         <div class="Habilidades" id="Habilidades">
+            <h2>Habilidades</h2>
+            <!-- Ícone do HTML -->
+            <i class="fa-brands fa-html5 icon html-icon" title="HTML"></i>
+            
+            <!-- Ícone do CSS -->
+            <i class="fa-brands fa-css3-alt icon css-icon" title="CSS"></i>
+                    
+            <!-- Ícone do GitHub -->
+            <i class="fa-brands fa-github icon github-icon" title="GitHub"></i>
+          
+            <!-- Ícone do Git -->
+            <i class="fa-brands fa-git icon git-icon" title="Git"></i>
+
+            <h2>Estudando</h2>
+            <!-- Ícone do javascript -->
+            <i class="fa-brands fa-js icon JavaScript" title="JavaScript"></i>
+            <!--Ícone do java-->
+            <i class="fa-brands fa-java icon Java" title="Java"></i>
+          </div>
+
+            <!--Projetos com API-->
+<div id="Projetos">
+    
+                <h1>Projetos</h1>
+                <div id="projetos-container"></div>
+                <button id="load-more">Carregar Mais</button>
+    
+</div>
+        <!--Contatos-->
+<div class="Contato" id="Contato">
+    <section class="contact-section">
+      <div class="contact-container">
+        <h2>Entre em Contato</h2>
+        <form action="https://formsubmit.co/contatemporaria6565@gmail.com" method="POST" class="contact-form" target="_blank">
+          <!-- Campos ocultos para configurar o FormSubmit -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> <!-- opcional -->
+  
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" placeholder="Seu nome" required>
+  
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+  
+          <label for="message">Mensagem:</label>
+          <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
+  
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </div>
+  </main>
+
+
+    <footer>
+        <div class="redes socias">
+            <!--ícones-->
+            <a href="https://wa.me/557591890654?text=Ol%C3%A1%21+eu+queria+sabe+o+valor+para+criar+um+site+o+senho+poderia+me+fala" target="_blank"><i class="fa-brands fa-whatsapp" id="icons"></i></a>
+            <a href="https://www.instagram.com/santtz_kauan/?__pwa=1" target="_blank"><i class="fa-brands fa-instagram" id="icons"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-github" id="icons"></i></a>
+            <a href="" target="_blank"><i class="fa-brands fa-linkedin" id="icons"></i></a>
+            <p id="BY">Todos Direitos Reservados by Kauan.K&copy;2025_Kauan</p>
+        </div>
+    </footer>
+    <script src="js/index.js"></script>
+    <script src="js/API.js"></script>
+</body>
+</html>

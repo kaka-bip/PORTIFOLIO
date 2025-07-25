@@ -2,120 +2,88 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/responsividade.css">
-   <link rel="stylesheet" href="css/style.css">
-   <link rel="stylesheet" href="css/projetos.css">
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-   <link href="https://cdn.jsdelivr.net/gh/yesiamrocks/cssanimation.io@1.0.3/cssanimation.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cssanimation.io/css/cssanimation.css">
-   <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
     <title>h1-PORTIFOLIO-h1</title>
 </head>
-<body>
+<body onload="tempo()">
     <header>
         <nav class="navbar">
-            <div class="cssanimation leFadeInTop sequence"> <h2>Portifolio_Kauan </h2></div>
-            <ul>
-                <a href="#Sobre">Sobre Mim
-                    <i class="fa-solid fa-circle-user"></i>
-                </a>
-
-                <a href="#Habilidades">Habilidades
-                    <i class="fas fa-code"></i>
-                </a>
-
-                <a href="#Projetos">Projetos
-                    <i class="fa-solid fa-diagram-project"></i>
-                </a>
-
-                <a href="#Contato">Contatos
-                    <i class="fa-regular fa-comment"></i>
-                </a>
-
-            </ul>
+            <h2 class="nav-titulo">Portifolio_Kauan</h2>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sobre-Mim</a></li>
+                    <li><a href="#">Projetos</a></li>
+                    <li><a href="#">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="nav-icons">
+                <a href=""><i class="fa-brands fa-square-github"></i></a>
+                <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+            </div>
         </nav>
     </header>
-
     <main>
-        <!--Home-->
-        <div class="cssanimation leDoorCloseLeft sequence">KAUAN.K</div>
-        <img src="https://user-images.githubusercontent.com/97471199/230774187-e482399b-492c-4c17-a831-0314bf90526e.png" alt=""  class="dev">
-
-        <!--Sobre mim-->
-        <div class="Sobre" id="Sobre">
-            <h2><strong>Sobre mim</strong></h2>
-            <P>Hello,word,<br>Olá, sou Kauan, um desenvolvedor front-end júnior de 14 anos. Comecei minha jornada no desenvolvimento web no final de 2024 e, desde então, venho explorando as diversas possibilidades que a tecnologia oferece. Atualmente, estou focado em aprimorar minhas habilidades em HTML, CSS e JavaScript, com o objetivo de criar experiências mais dinâmicas e funcionais para os usuários. Em 2025, estou determinado a continuar meu aprendizado e me aperfeiçoar para me tornar um desenvolvedor front-end de excelência!</P>
-        </div>
-
-         <!--Habilidades-->
-         <div class="Habilidades" id="Habilidades">
-            <h2>Habilidades</h2>
-            <!-- Ícone do HTML -->
-            <i class="fa-brands fa-html5 icon html-icon" title="HTML"></i>
-            
-            <!-- Ícone do CSS -->
-            <i class="fa-brands fa-css3-alt icon css-icon" title="CSS"></i>
-                    
-            <!-- Ícone do GitHub -->
-            <i class="fa-brands fa-github icon github-icon" title="GitHub"></i>
-          
-            <!-- Ícone do Git -->
-            <i class="fa-brands fa-git icon git-icon" title="Git"></i>
-
-            <h2>Estudando</h2>
-            <!-- Ícone do javascript -->
-            <i class="fa-brands fa-js icon JavaScript" title="JavaScript"></i>
-            <!--Ícone do java-->
-            <i class="fa-brands fa-java icon Java" title="Java"></i>
-          </div>
-
-            <!--Projetos com API-->
-<div id="Projetos">
-    
-                <h1>Projetos</h1>
-                <div id="projetos-container"></div>
-                <button id="load-more">Carregar Mais</button>
-    
-</div>
-        <!--Contatos-->
-<div class="Contato" id="Contato">
-    <section class="contact-section">
-      <div class="contact-container">
-        <h2>Entre em Contato</h2>
-        <form action="https://formsubmit.co/contatemporaria6565@gmail.com" method="POST" class="contact-form" target="_blank">
-          <!-- Campos ocultos para configurar o FormSubmit -->
-          <input type="hidden" name="_captcha" value="false">
-          <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"> <!-- opcional -->
-  
-          <label for="name">Nome:</label>
-          <input type="text" id="name" name="name" placeholder="Seu nome" required>
-  
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
-  
-          <label for="message">Mensagem:</label>
-          <textarea id="message" name="message" placeholder="Sua mensagem" rows="5" required></textarea>
-  
-          <button type="submit">Enviar</button>
-        </form>
-      </div>
+        <div>
+            <h3>Olá_</h3>
+            <h1>Sou <span class="typed-text"></span></h1>
+            <p>Julgar um programador pela quantidade de código é como elogiar um mágico pela quantidade de pombos que ele usou — impressiona, mas não significa que o truque foi bom.</p>
+            <span id="msg"></span>
+            <div class="seta"><a href="#">&#11167;</a></div>
+    </main>
+    <!--Sobre-Mim-->
+    <section>
+        <h1>Sobre Mim</h1>
+        <p>Olá, sou Kauan Santos, desenvolvedor web focado em front-end, com experiência em HTML, CSS e JavaScript. Gosto de criar interfaces modernas, responsivas e intuitivas. Estou sempre aprendendo novas tecnologias e buscando evoluir a cada projeto. Meu objetivo é transformar boas ideias em soluções digitais eficientes.</p>
     </section>
-  </div>
-  </main>
-
-
-    <footer>
-        <div class="redes socias">
-            <!--ícones-->
-            <a href="https://wa.me/557591890654?text=Ol%C3%A1%21+eu+queria+sabe+o+valor+para+criar+um+site+o+senho+poderia+me+fala" target="_blank"><i class="fa-brands fa-whatsapp" id="icons"></i></a>
-            <a href="https://www.instagram.com/santtz_kauan/?__pwa=1" target="_blank"><i class="fa-brands fa-instagram" id="icons"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-github" id="icons"></i></a>
-            <a href="" target="_blank"><i class="fa-brands fa-linkedin" id="icons"></i></a>
-            <p id="BY">Todos Direitos Reservados by Kauan.K&copy;2025_Kauan</p>
+    <!--Habilidades-->
+    <section>
+        <h1>Habilidades</h1>
+        <div class="icons">
+            <i class="fa-brands fa-html5 icon html-icon" title="HTML"></i>
+            <i class="fa-brands fa-css"></i>
+            <i class="fa-brands fa-git-alt"></i>
+            <i class="fa-brands fa-js"></i>
+            <i class="fa-brands fa-bootstrap"></i>
         </div>
+    </section>
+    <!--Projetos-->
+    <section>
+        <h1>Projetos</h1>
+        <div class="card">         
+            <div class="card-img"></div>
+        </div>
+    </section>
+    <!--Contato-->
+    <section>
+        <form action="https://formsubmit.co/contatemporaria6565@gmail.com" method="POST">
+            <!--Nome-->
+            <input type="text" name="name" id="name" placeholder="Seu nome" data-error="Coloque seu nome" required>
+            <!--e-mail-->
+            <input type="email" name="email" id="email" required>
+            <!--mensagem-->
+                <input type="text" name="mensagem" id="mensagem placeholder="Escreva sua mensagem" required data-error="Escreva sua mensagem">
+            <!--button-->
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </section>
+    <!--footer-->
+    <footer>
+        <section>
+                <i class="fa-brands fa-square-github"></i>
+                <i class="fa-brands fa-square-whatsapp"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <p>Todos Direitos Reservados by Kauan.K &copy; 2025</p>
+        </section>
     </footer>
     <script src="js/index.js"></script>
-    <script src="js/API.js"></script>
+    <script src="js/hora.js"></script>
 </body>
 </html>
