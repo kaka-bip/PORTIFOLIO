@@ -1,62 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Playwrite+PL:wght@100..400&display=swap');
+
+html,body{
+    overflow-x: hidden;
+}
+
 *{
     margin: 0;
     padding: 0;
-    overflow: hidden;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-nav{
-    display: flex;
+body{
+    font-family: cursive;   
+    background-color: #f8f3f3;
 }
 
-.navbar{
-    width: 100%;
-    height: 80px;
-    background-color: #0872c3;
+main{
+    margin-top: 80px;
+}
+
+.home{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
+    padding: 0 50px;
+    width: 100%;
+    height: 649px;
+    padding: 10px;
+    background-color: #f8f3f3;
+    color: #2e2e2e;
+    position: relative;
 }
 
-.nav-titulo{
-    padding-left: 10px;
-    font-size: 27px;
+.batman {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px; 
+    height: 500px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.8;
+    z-index: 1;
+    border-radius: 20px;
 }
 
-.nav-links ul{
-    display: flex;
-    gap: 30px;
+.batman img {
+    max-width: 100%;
+    height: auto;
 }
 
-.nav-links a{
-    text-decoration: none;
-    color: black;
-    font-size: 25px;
-    transition: background-color 0.5.5s ease, color 0.5.5s ease;
+.home h3{
+    color: #2e2e2e;
+    font-size: 23px;
+}
+.home h3>span{
+    color: purple;
 }
 
-.nav-links a:hover{
-    color: #8bcbf8;
+.home h1{
+    font-size: 35px;
+}
+
+.breve{
+    width: 500px;
+    padding: 10px;
+}
+
+.home p{
+    font: bolder;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.typed-text{
+    color: rgb(119, 0, 255);
     text-decoration: underline;
 }
 
-.nav-links li{
-    list-style-type: none;
-}
-
-.nav-icons{
+.seta{
+    margin-left: 50px;
+    margin-right:  50px;
     display: flex;
-    gap: 15px;
-    padding-right: 30px;
+    padding: 0 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
 }
 
-.nav-icons i:hover{
-    color: #8bcbf9;
+.seta a{
+    color: #444444;
+    text-decoration: none;
 }
 
-.nav-icons i{
-    transition: all 0.5s ease;
-    font-size: 40px;
-    color: #000;
+.sobre{
+    width: 100%;
+    height: 100%;
+    background-color: #f6e7ac;
+    padding: 10px;
+}
+
+.sobre h1{
+    font-size: 6.1rem;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.sobre p{
+    text-align: justify;
+    text-align: center;
+    font: bolder;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+/* Container principal */
+.habilidades {
+    display: flex;
+    justify-content: space-between; /* Separa título e ícones */
+    align-items: flex-start; /* Alinha no topo */
+    padding: 20px 50px;
+    background-color: #444444;
+    position: relative;
+}
+
+/* Título */
+.habilidades h1 {
+    font-size: 6.1rem;
+    text-decoration: underline;
+    text-decoration-color: purple;
+    margin: 0;
+}
+
+/* Grid de ícones */
+.icons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 30px;
+    font-size: 5rem;
 }

@@ -3,87 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    
     <title>h1-PORTIFOLIO-h1</title>
+    
+    <!-- Ícone da aba -->
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+
+    <!-- Estilos CSS -->
+     <link rel="stylesheet" href="css/animacao.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/responsividade.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" 
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Biblioteca Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
-<body onload="tempo()">
+<body>
+
+    <!-- Navbar -->
     <header>
-        <nav class="navbar">
-            <h2 class="nav-titulo">Portifolio_Kauan</h2>
+        <nav class="navbar" id="navbar">
+            <h2 class="nav-titulo">KAUAN.K</h2>
+            <div id="menu-toggle" class="menu-toggle">
+                <i class="fa-solid fa-bars" id="icon-menu"></i>
+            </div>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Sobre-Mim</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contatos</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre Mim</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contatos</a></li>
                 </ul>
             </div>
             <div class="nav-icons">
-                <a href=""><i class="fa-brands fa-square-github"></i></a>
-                <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                <a href="https://github.com/kaka-bip" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                <a href="https://www.linkedin.com/in/kauansantosxavier/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </nav>
     </header>
-    <main>
+
+    <!-- Home -->
+    <main id="home" class="home">
         <div>
-            <h3>Olá_</h3>
+            <h3>Olá<span>_</span></h3>
             <h1>Sou <span class="typed-text"></span></h1>
-            <p>Julgar um programador pela quantidade de código é como elogiar um mágico pela quantidade de pombos que ele usou — impressiona, mas não significa que o truque foi bom.</p>
-            <span id="msg"></span>
-            <div class="seta"><a href="#">&#11167;</a></div>
+            <div class="breve">
+                <p>Julgar um programador pela quantidade de código é como elogiar um mágico pela quantidade de pombos que ele usou. Impressiona, mas não significa que o truque foi bom.</p>
+            </div>
+            <div class="seta flutuar">
+                <a href="#sobre"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </div>
+        <div class="batman" id="batman" style="background-image: url(assets/img/batman.png);"></div>
     </main>
-    <!--Sobre-Mim-->
-    <section>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="sobre">
         <h1>Sobre Mim</h1>
         <p>Olá, sou Kauan Santos, desenvolvedor web focado em front-end, com experiência em HTML, CSS e JavaScript. Gosto de criar interfaces modernas, responsivas e intuitivas. Estou sempre aprendendo novas tecnologias e buscando evoluir a cada projeto. Meu objetivo é transformar boas ideias em soluções digitais eficientes.</p>
     </section>
-    <!--Habilidades-->
-    <section>
+
+    <!-- Habilidades -->
+    <section id="habilidades" class="habilidades">
         <h1>Habilidades</h1>
         <div class="icons">
             <i class="fa-brands fa-html5 icon html-icon" title="HTML"></i>
-            <i class="fa-brands fa-css"></i>
-            <i class="fa-brands fa-git-alt"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-bootstrap"></i>
+            <i class="fa-brands fa-css3-alt" title="CSS"></i>
+            <i class="fa-brands fa-js" title="JavaScript"></i>
+            <i class="fa-brands fa-git-alt" title="Git"></i>
+            <i class="fa-brands fa-bootstrap" title="Bootstrap"></i>
         </div>
     </section>
-    <!--Projetos-->
-    <section>
+
+    <!-- Projetos -->
+    <section id="projetos" class="projetos">
         <h1>Projetos</h1>
-        <div class="card">         
+        <div class="card">
             <div class="card-img"></div>
         </div>
     </section>
-    <!--Contato-->
-    <section>
+
+    <!-- Contato -->
+    <section id="contato" class="contato">
         <form action="https://formsubmit.co/contatemporaria6565@gmail.com" method="POST">
-            <!--Nome-->
-            <input type="text" name="name" id="name" placeholder="Seu nome" data-error="Coloque seu nome" required>
-            <!--e-mail-->
-            <input type="email" name="email" id="email" required>
-            <!--mensagem-->
-                <input type="text" name="mensagem" id="mensagem placeholder="Escreva sua mensagem" required data-error="Escreva sua mensagem">
-            <!--button-->
+            <!-- Nome -->
+            <input type="text" name="name" id="name" placeholder="Seu nome" required>
+
+            <!-- Email -->
+            <input type="email" name="email" id="email" placeholder="Seu e-mail" required>
+
+            <!-- Mensagem -->
+            <input type="text" name="mensagem" id="mensagem" placeholder="Escreva sua mensagem" required>
+
+            <!-- Botão -->
             <div>
                 <button type="submit">Enviar</button>
             </div>
         </form>
     </section>
-    <!--footer-->
+
+    <!-- Rodapé -->
     <footer>
         <section>
-                <i class="fa-brands fa-square-github"></i>
-                <i class="fa-brands fa-square-whatsapp"></i>
-                <i class="fa-brands fa-square-instagram"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <p>Todos Direitos Reservados by Kauan.K &copy; 2025</p>
+            <i class="fa-brands fa-square-github"></i>
+            <i class="fa-brands fa-square-whatsapp"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <p>Todos Direitos Reservados by Kauan.K &copy; 2025</p>
         </section>
     </footer>
+
+    <!-- Scripts -->
     <script src="js/index.js"></script>
-    <script src="js/hora.js"></script>
+    <script src="js/menu.js"></script>
 </body>
 </html>
