@@ -183,3 +183,63 @@ main{
     color: #d8d8;
     transform: scale(1.1);
 }
+
+/*Contato*/
+.contato{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #686767;
+}
+.inputs{
+    border: 2px solid black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+    padding: 50px;
+}
+.contato h1{
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: underline;
+    align-items: center;
+    text-align: center;
+}
+.contato p{
+    font: bolder;
+}
+#name{
+    margin-bottom: 10px;
+    border-radius: 20px;
+    display: flex;
+    padding: 6px;
+    justify-content: flex-start;
+    align-items: flex-end;
+    text-align: center;
+}
+#email{
+    border-radius: 20px;
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#msg{
+    border-radius: 20px;
+    display: flex;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#button{
+    width: 90px;
+    padding: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
