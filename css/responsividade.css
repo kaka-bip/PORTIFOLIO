@@ -51,27 +51,13 @@
     }
 }
 
-@media (max-width: 1200px) {
-    .batman {
-        width: 400px;
-        height: 400px;
-    }
-}
-
-@media (max-width: 768px) {
-    .batman {
+@media (max-width: 928px) {
+    .imgbox {
+        right: 2rem;
         width: 300px;
         height: 300px;
-        opacity: 0.7;
     }
-}
-
-@media (max-width: 480px) {
-    .batman {
-        width: 200px;
-        height: 200px;
-        opacity: 0.6;
-    }
+    
 }
 
 @media (max-width: 928px) {
@@ -86,9 +72,15 @@
         padding: 0 10px;
         line-height: 1.5; 
     }
+    .div h1 {
+        font-size: 2.5rem;
+        line-height: 1.2;
+        padding-bottom: 8px;
+        margin-bottom: 18px;
+    }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 928px) {
     .habilidades {
         flex-direction: column;
         padding: 20px;
@@ -106,4 +98,11 @@
         grid-template-columns: repeat(2, 1fr); /* 2 colunas em mobile */
     }
 
+}
+
+@media (max-width: 928px){
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+    }
 }

@@ -31,25 +31,36 @@ main{
     color: #2e2e2e;
     position: relative;
 }
-
-.batman {
+/*imagem do batman e o fundo uni*/
+.imgbox{
     position: absolute;
-    right: 0;
+    right: 5%;
     top: 50%;
     transform: translateY(-50%);
-    width: 500px; 
-    height: 500px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.8;
     z-index: 1;
-    border-radius: 20px;
+    width: 35%;
+    height: 400px;
 }
 
-.batman img {
-    max-width: 100%;
+.main-img{
+    width: 100%;
     height: auto;
+    animation: float 4s ease-in-out infinite;
+}
+
+#splash{
+    border-radius: 20px;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    opacity: 0.6;
+}
+
+/* Home */
+.home{
+    position: relative;
+    overflow: hidden;
 }
 
 .home h3{
@@ -103,7 +114,8 @@ main{
 }
 
 .sobre h1{
-    padding: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     font-size: 6.1rem;
     text-align: center;
     text-decoration: underline;
@@ -143,4 +155,31 @@ main{
     grid-template-columns: repeat(3, 1fr); /* 3 colunas */
     gap: 30px;
     font-size: 5rem;
+    color: #d8d8d8;
+    transition: transform 0.5s ease;
+}
+
+#html:hover{
+    color: #d8d8;
+    transform: scale(1.1);
+}
+
+#css:hover{
+    color: #d8d8;
+    transform: scale(1.1);
+}
+
+#js:hover{
+    color: #d8d8;
+    transform: scale(1.1);
+}
+
+#git:hover{
+    color: #d8d8;
+    transform: scale(1.1);
+}
+
+#boot:hover{
+    color: #d8d8;
+    transform: scale(1.1);
 }
