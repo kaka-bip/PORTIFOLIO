@@ -244,3 +244,48 @@ main{
     align-items: center;
     margin: auto;
 }
+
+#loadMore{
+    display: flex;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 200px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.projetos {
+    padding: 20px;
+}
+
+.projetos h1{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+.card h2 {
+    margin: 0 0 10px;
+}
+.card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: white;
+    background: #007acc;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.card a:hover {
+    background: #005fa3;
+}
