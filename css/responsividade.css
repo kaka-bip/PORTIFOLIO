@@ -1,5 +1,6 @@
-
+/* ==================== MOBILE FIRST ==================== */
 @media (max-width: 928px) {
+    /* NAVBAR */
     .navbar {
         flex-direction: row;
         align-items: center;
@@ -8,15 +9,12 @@
         position: relative;
     }
     .nav-titulo {
-        text-align: left;
-        width: auto;
-        padding: 0 0 0 10px;
-        font-size: 27px;
+        font-size: 22px;
+        padding-left: 10px;
     }
     .menu-toggle {
         display: flex;
-        margin: 0 20px 0 0;
-        align-self: center;
+        margin-right: 20px;
     }
     .nav-links {
         display: none;
@@ -29,109 +27,67 @@
         background: #0872c3;
         z-index: 10;
         border-radius: 0 0 0 10px;
-        box-shadow: -2px 2px 10px rgba(0,0,0,0.1);
     }
     .nav-links.active {
         display: flex;
     }
     .nav-links ul {
         flex-direction: column;
-        gap: 30px;
-        align-items: center;
-        width: 100%;
-        margin: 30px 0 10px 0;
-    }
-    .nav-icons {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        margin-bottom: 20px;
         gap: 20px;
+        margin: 20px 0;
     }
-}
 
-@media (max-width: 928px) {
-    .imgbox {
-        right: 2rem;
-        width: 300px;
-        height: 300px;
-    }
-    
-}
-
-@media ( max-width: 928px){
-    #splash{
-        opacity: 0.2;
-    }
-    #main-img{
-        opacity: 0.0;
-        margin-bottom: 0;
-        display: flex;
+    /* HOME */
+    .home {
+        flex-direction: column;
         text-align: center;
-        align-items: center;
-        justify-content: center;
+        padding: 20px;
+        min-height: 100vh;
     }
-}
+    .imgbox {
+        position: static;
+        transform: none;
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+    #splash {
+        width: 100%;
+        opacity: 0.3;
+    }
 
-@media (max-width: 928px) {
+    /* SOBRE */
     .sobre h1 {
-        font-size: 2.5rem;
-        line-height: 1.2;      
-        padding-bottom: 8px;
-        margin-bottom: 18px;
+        font-size: 2rem;
     }
     .sobre p {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 0 10px;
-        line-height: 1.5; 
     }
-    .div h1 {
-        font-size: 2.5rem;
-        line-height: 1.2;
-        padding-bottom: 8px;
-        margin-bottom: 18px;
-    }
-}
 
-@media (max-width: 928px) {
+    /* HABILIDADES */
     .habilidades {
         flex-direction: column;
-        padding: 20px;
-    }
-    .habilidades h1{
-        text-align: center;
-        margin: auto;    
-    }
-
-    .icons {
-        justify-content: center;
         align-items: center;
-        margin: auto;
-        margin-top: 30px;
-        grid-template-columns: repeat(2, 1fr); /* 2 colunas em mobile */
+        text-align: center;
+    }
+    .habilidades h1 {
+        font-size: 2.5rem;
+    }
+    .icons {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
     }
 
-}
-
-@media (max-width: 928px){
-    body{
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 768px) {
+    /* CONTATO */
     .contato {
-        padding: 40px 15px;
+        padding: 30px 15px;
     }
-    
-    .inputs {
-        padding: 30px;
-        margin-right: 0;
-    }
-    
     .contato h1 {
         font-size: 2rem;
+    }
+    .inputs {
+        width: 100%;
+        padding: 20px;
     }
 }
