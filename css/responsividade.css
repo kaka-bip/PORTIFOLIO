@@ -1,5 +1,8 @@
 /* ==================== MOBILE FIRST ==================== */
 @media (max-width: 928px) {
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
     /* NAVBAR */
     .navbar {
         flex-direction: row;
@@ -51,6 +54,11 @@
         height: auto;
         margin-top: 20px;
     }
+
+    .poema{
+        font-size: 15px;
+    }
+
     #splash {
         width: 100%;
         opacity: 0.3;

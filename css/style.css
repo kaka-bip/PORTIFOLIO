@@ -74,11 +74,6 @@ main{
     font-size: 35px;
 }
 
-.breve{
-    width: 500px;
-    padding: 10px;
-}
-
 .home p{
     font: bolder;
     font-size: 20px;
@@ -349,3 +344,6 @@ main{
     color: #8165fb;
 }
 
+.footer-span{
+    color: red;
+}
