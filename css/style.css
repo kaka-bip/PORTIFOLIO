@@ -78,6 +78,7 @@ main{
     font: bolder;
     font-size: 20px;
     text-align: justify;
+    width: 400px;
 }
 
 .typed-text{
@@ -119,13 +120,13 @@ main{
 
 .sobre p{
     margin-left: 5px;
-    margin-right: 6px;
-    text-align: justify;
+    margin-right: 6px;  
     text-align: center;
     font: bolder;
     font-size: 20px;
     padding-bottom: 20px;
 }
+
 
 /* Container principal */
 .habilidades {
