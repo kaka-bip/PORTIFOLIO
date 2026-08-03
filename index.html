@@ -1,26 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/imports.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <link rel="stylesheet" href="css/imports.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
+      integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Portfolio</title>
-</head>
-<body>
-    <nav class="navbar">
+  </head>
+  <body>
+    <!-- Menu do site -->
+    <nav class="navbar" id="menu">
+      <div class="menu">
         <ul class="navlinks">
-            <li class="links"><a href="" id="active">Home</a></li>
-
-            <li class="links"><a href="">About</a></li>
-
-            <li class="links"><a href="">Projects</a></li>
-
-            <li class="links"><a href="">Services</a></li>
-            
-            <li class="links"><a href="">Contact</a></li>
+          <li class="links"><a href="">Home</a></li>
+          <li class="links"><a href="">About</a></li>
+          <li class="links"><a href="">Projects</a></li>
+          <li class="links"><a href="">Services</a></li>
+          <li class="links"><a href="">Contact</a></li>
         </ul>
+        <div id="menubutton">
+          <p>☰</p>
+        </div>
+      </div>
     </nav>
+
+    <!-- Home principal -->
+    <section class="home">
+      <h3>Avalie meu portfólio e meus projetos.</h3>
+      <h1 id="typer"></h1>
+      <h3>Full-Stack Developer</h3>
+      <p>I transform ideas into high-impact digital experiences by combining cutting-edge technology and intuitive design.</p>
+      <div class="btn-links">
+        <button>
+            <i class="fa-brands fa-github"></i>Github
+        </button>
+        <button>
+            <i class="fa-brands fa-linkedin"></i>Linkedin
+        </button>
+      </div>
+    </section>
     <script src="js/App.js"></script>
-</body>
+    <script src="js/design.js"></script>
+  </body>
 </html>

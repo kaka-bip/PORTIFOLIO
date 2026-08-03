@@ -1,51 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  transition: 0.5s ease;
 }
 
-.navbar{
-    /* Design da navbar*/
+body{
+  padding-top: 100px;
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.navbar {
+  /* Design da navbar*/
+  display: flex;
+  margin: 5px;
+  padding: 10px;
+  gap: 30px;
+  border: none;
+  box-shadow: 0px 0.5px 3px black;
+  border-radius: 30px;
+  text-align: center;
+  background-color: #fff;
+
+  a {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #ccccccb4;
+      margin: 3px;
+      padding: 7px;
+      border-radius: 20px;
+    }
+  }
+  /* Configuração da navbar */
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 90%;
+  max-width: 410px;
+  min-width: 200px;
+  z-index: 1000;
+
+  .navlinks {
     display: flex;
-    margin: 5px;
-    padding: 10px;
-    gap:30px;
+    margin: 0 1rem;
+    gap: 1rem;
+  }
+
+  #active {
+    background-color: #000;
+    color: #fff;
+    margin: 3px;
+    padding: 7px;
+    border-radius: 20px;
+  }
+
+  #menubutton{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    display: none;
+    cursor: pointer;
     border: none;
     box-shadow: 0px 0.5px 3px black;
-    border-radius: 30px;
-    text-align: center;
+    font-weight: bolder;
+  }
+}
 
-    a{
-        text-align: center;
-        color: #000;
-        text-decoration: none;
-        font-weight: bolder;
-        font-size: 16px;
-    }
-    /* Configuração da navbar */
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 90%;
-    max-width: 450px;
-    min-width: 200px;
-    z-index: 1000;
-
-
-    .navlinks{
-        display: flex;
-        margin: 0 1rem;
-        gap: 1rem;
-    }
-
-    #active{
-        background-color: #000;
-        color: #fff;
-        margin: 3px;
-        padding: 7px;
-        border-radius: 20px;
-    }
+.home{
+  text-align: center;
 }
