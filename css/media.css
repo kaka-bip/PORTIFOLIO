@@ -1,39 +1,155 @@
-@media (min-width: 320px) and (max-width: 500px) {
-    .navbar{
-        position: fixed;
-        top: 20px;
-        right: 0px;
-        box-shadow: none;
+@media (min-width: 320px) and (max-width: 768px) {
 
-        .navlinks{
-            display: none;
-        }
+  /* ===== NAVBAR ===== */
+  .navbar {
+    padding: 0;
+    gap: 0;
+    box-shadow: none;
 
-        #menubutton{
-            display: flex;
-        }
+    .navlinks {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      top: 75px;
+      right: 20px;
+      min-width: 170px;
+      margin: 0;
+      background: #0d0d12;
+      border: 1px solid #3a2a52;
+      border-radius: 16px;
+      box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+      padding: 10px;
+      gap: 2px;
+      z-index: 1000;
 
-        &.active .navlinks{
-            display: flex;
-            flex-direction: column;
-            position: fixed;
-            top: 75px;
-            right: 20px;
-            left: 0;
-            min-width: 170px;
-            border-radius: 20px;
-            background-color: #fff;
-            box-shadow: 0px 0.5px 3px black;
-            padding: 10px;
-            margin: 0;
-            gap: 2px;
-            z-index: 1000;
+      opacity: 0;
+      transform: translateY(-10px);
+      pointer-events: none;
+      transition: opacity 0.25s ease, transform 0.25s ease;
 
-            .links a{
-                display: block;
-                padding: 10px 14px;
-                border-radius: 10px;
-            }
-        }
+      .links a {
+        display: block;
+        padding: 10px 14px;
+        border-radius: 10px;
+      }
     }
+
+    #menubutton {
+      display: flex;
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 1001;
+    }
+
+    &.active .navlinks {
+      opacity: 1;
+      transform: translateY(0);
+      pointer-events: auto;
+    }
+  }
+
+  /* ===== HOME ===== */
+  .home {
+    padding: 0 24px;
+    gap: 16px;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    .btn-links {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      button {
+        width: 100%;
+        margin: 6px 0;
+      }
+    }
+  }
+
+  /* ===== ABOUT ===== */
+  .about {
+    flex-direction: column;
+    padding: 60px 24px;
+    gap: 32px;
+    text-align: center;
+
+    .aboutText {
+      max-width: 100%;
+    }
+
+    /* o gato some no mobile, conforme pedido */
+    .pixelArt {
+      display: none;
+    }
+  }
+
+  /* ===== SKILLS ===== */
+  .skills {
+    padding: 60px 24px;
+    min-height: 260px; /* garante espaço pro .skill não ser cortado pelo overflow:hidden */
+
+    h1 {
+      font-size: 1.4rem;
+    }
+
+    h2 {
+      font-size: 1rem;
+    }
+
+    .skill {
+      top: 170px; /* mais perto do título, já que os textos ficaram menores */
+      gap: 28px;
+
+      i {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  /* ===== PROJECTS ===== */
+  .projects {
+    padding: 60px 24px;
+
+    h1 {
+      font-size: 1.4rem;
+    }
+
+    .project-grid {
+      grid-template-columns: 1fr; /* uma coluna só */
+    }
+  }
+
+  /* ===== CONTACT ===== */
+  #contact {
+    grid-template-columns: 1fr; /* uma coluna só */
+    grid-template-areas:
+      "title"
+      "form"
+      "description"
+      "socials";
+    padding: 60px 24px;
+    gap: 20px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    .contact,
+    .contact-descripiton,
+    .iconContact {
+      padding: 24px;
+    }
+  }
 }

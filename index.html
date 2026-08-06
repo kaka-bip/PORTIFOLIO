@@ -1,9 +1,13 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="assets/img/pixelart.png" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="assets/img/pixelart.png"
+      type="image/x-icon"
+    />
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="css/imports.css" />
     <link
@@ -15,19 +19,31 @@
     />
     <title>Portfolio</title>
   </head>
-  <body>
+  <body class="light">
     <div class="loader" id="loader">
-      <img src="assets/img/download.gif" alt="carregando" class="loader-gif">
+      <img src="assets/img/download.gif" alt="carregando" class="loader-gif" />
     </div>
     <!-- Menu do site -->
     <nav class="navbar" id="menu">
       <div class="menu">
         <ul class="navlinks">
-          <li class="links"><a href="#">Home</a></li>
-          <li class="links"><a href="#about">About</a></li>
-          <li class="links"><a href="#project">Projects</a></li>
-          <li class="links"><a href="#skill">Skill</a></li>
-          <li class="links"><a href="#contact">Contact</a></li>
+          <li class="links"><a href="#" data-i18n="navHome">Home</a></li>
+          <li class="links"><a href="#about" data-i18n="navAbout">About</a></li>
+          <li class="links">
+            <a href="#project" data-i18n="navProjects">Projects</a>
+          </li>
+          <li class="links">
+            <a href="#skill" data-i18n="navSkills">Skill</a>
+          </li>
+          <li class="links">
+            <a href="#contact" data-i18n="navContact">Contact</a>
+          </li>
+          <li class="links-extra">
+            <div id="theme" data-i18n="theme">
+              <i class="fa-solid fa-circle-half-stroke"></i>
+              <p>Tema</p>
+            </div>
+          </li>
         </ul>
         <div id="menubutton">
           <p>☰</p>
@@ -37,33 +53,50 @@
 
     <!-- Home principal -->
     <section class="home">
-      <h3 class="h3-home">Evaluate my portfolio and my projects.</h3>
+      <h3 class="h3-home" data-i18n="homeDescription">
+        Evaluate my portfolio and my projects.
+      </h3>
       <h1 id="typer"></h1>
-      <h2>Full-Stack Developer</h2>
-      <p>I transform ideas into high-impact digital  <br> experiences by combining cutting-edge technology and intuitive design.</p>
+      <h2 data-i18n="developer">Full-Stack Developer</h2>
+      <p data-i18n="homeText">
+        I transform ideas into high-impact digital <br />
+        experiences by combining cutting-edge technology and intuitive design.
+      </p>
       <div class="btn-links">
         <button>
-            <a href="https://github.com/kaka-bip" target="_blank"><i class="fa-brands fa-github"></i>Github</a>
+          <a href="https://github.com/kaka-bip" target="_blank"
+            ><i class="fa-brands fa-github"></i>Github</a
+          >
         </button>
         <button>
-            <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i>Linkedin</a>
+          <a href="#" target="_blank"
+            ><i class="fa-brands fa-linkedin"></i>Linkedin</a
+          >
         </button>
       </div>
     </section>
-
+    <!-- About -->
     <section class="about" id="about">
-        <div class="aboutText">
-            <h1>About Me</h1>
-            <p>I'm Kauan Santos, a Full-Stack developer passionate about technology and turning ideas into digital solutions. Because I love what I do so much, I always strive to dedicate myself fully to each project, understanding the client's needs and seeking the best solutions for each challenge. My goal is to develop modern, functional and quality products, always ensuring the best experience and customer satisfaction.</p>
-        </div>
-        <div class="pixelArt">
-            <img src="assets/img/pixelart.png" alt="">
-        </div>
+      <div class="aboutText">
+        <h1 data-i18n="aboutTitle">About Me</h1>
+        <p data-i18n="aboutText">
+          I'm Kauan Santos, a Full-Stack developer passionate about technology
+          and turning ideas into digital solutions. Because I love what I do so
+          much, I always strive to dedicate myself fully to each project,
+          understanding the client's needs and seeking the best solutions for
+          each challenge. My goal is to develop modern, functional and quality
+          products, always ensuring the best experience and customer
+          satisfaction.
+        </p>
+      </div>
+      <div class="pixelArt">
+        <img src="assets/img/pixelart.png" alt="" />
+      </div>
     </section>
-
+    <!-- Skill -->
     <section class="skills" id="skill">
-      <h1>Skills</h1>
-      <h2>The skills I use in projects</h2>
+      <h1 data-i18n="skillsTitle">Skills</h1>
+      <h2 data-i18n="skillsSubtitle">The skills I use in projects</h2>
       <div class="skill">
         <i class="fa-brands fa-square-js"></i>
         <i class="fa-brands fa-react"></i>
@@ -72,22 +105,56 @@
         <i class="fa-brands fa-html5"></i>
         <i class="fa-brands fa-github"></i>
         <i class="fa-brands fa-php"></i>
-        <i class="fa-brands fa-laravel"></i>  
+        <i class="fa-brands fa-laravel"></i>
         <i class="fa-brands fa-node-js"></i>
         <i class="fa-brands fa-npm"></i>
         <i class="fa-brands fa-git-alt"></i>
         <i class="fa-brands fa-figma"></i>
       </div>
     </section>
-
+    <!-- Projects -->
     <section class="projects">
-      <h1>My Projects</h1>
-      <p>A collection of web systems and applications I've engineered—from responsive user interfaces to scalable backend architectures.</p>
+      <h1 data-i18n="projectsTitle">My Projects</h1>
+      <p data-i18n="projectsDescription">
+        A collection of web systems and applications I've engineered—from
+        responsive user interfaces to scalable backend architectures.
+      </p>
 
       <div class="project-grid" id="project"></div>
     </section>
-    <script src="js/App.js"></script>
+    <!-- Contact -->
+    <section id="contact">
+      <h1 data-i18n="contactTitle">Let's Work Together</h1>
+      <div class="contact">
+        <form action="">
+          <h2 data-i18n="contactFormTitle">Send me a message</h2>
+          <label for="" data-i18n="name">Name</label>
+          <input type="text" />
+          <label for="" data-i18n="email">Email</label>
+          <input type="email" name="" id="" />
+          <label for="" data-i18n="message">Message</label>
+          <textarea name="message" rows="5" id=""></textarea>
+          <button type="submit" data-i18n="send">Send Message</button>
+          <p style="margin-top: 20px;">
+            <a href="" style="text-decoration: none; color: #fff; margin: 0 0 0 5px;">(75)991890654</a>
+          </p>
+        </form>
+      </div>
 
+      <div class="contact-descripiton">
+        <p data-i18n="contactDescription">
+          I'm always open to discussing new opportunities, creative projects,
+          and partnerships. Whether you have a project in mind, need a custom
+          solution, or simply want to explore new possibilities, I'd love to
+          connect. • Full-Stack Web Development • Front-end & Back-end
+          Development • Responsive & Modern Websites • APIs & Database
+          Integration • Custom Web Applications • Technical Solutions & Problem
+          Solving
+        </p>
+      </div>
+    </section>
+    <!-- Scripts -->
+    <script src="assets/API/APP.js"></script>
     <script src="js/design.js"></script>
   </body>
 </html>
